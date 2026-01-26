@@ -29,7 +29,7 @@ This template uses the [minimal mistakes](https://mmistakes.github.io/minimal-mi
 - To be able to see the changes you are making to your site, run `bundle install`, then after that is done, `bundle exec jekyll serve`
   - When it first starts, there will be a lot of warnings. Don't worry about them, most have to do with changes to a package that helps to handle the CSS. (Most jekyll themes have this issue right now, but we chose minimal mistakes since it's likely that they'll fix this later on, before the warnings become errors).
   - It will automatically regenerate your page as you make edits to any of the files that end in `.md`
-  - If you make changes to `_config.yml`, you will need to stop this process by pressing `control + c`, then running `bundle exec jekyll serve` again.
+  - If you make changes to `_config.yml`, you will need to stop this process by pressing `control + c` while in the terminal, then running `bundle exec jekyll serve` again.
 - If you have questions, please ask!!! 
 
 ### Tips:

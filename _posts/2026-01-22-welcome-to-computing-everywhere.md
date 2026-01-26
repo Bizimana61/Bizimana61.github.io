@@ -38,5 +38,6 @@ This template uses the [minimal mistakes](https://mmistakes.github.io/minimal-mi
 ### Guides:
 - [Git cheat sheet](https://git-scm.com/cheat-sheet)
   - Most likely, you will only need to know: `git add`, `git commit -m "<YOUR MESSAGE HERE>"` and `git push` to save your changes and publish your site
-  - We encourage you to make sure that your commit messages are descriptive! This helps you keep track of what changes you have made. 
+  - We encourage you to make sure that your commit messages are descriptive! This helps you keep track of what changes you have made.
+  - You can also use the VSCode Git interface. Some instructions can be found [here](https://code.visualstudio.com/docs/sourcecontrol/overview). 
 - [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)

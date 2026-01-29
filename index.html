@@ -1,7 +1,67 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+title: "Jerome Bizimana"
+layout: splash
+permalink: /
+date: 2026-01-29
+header:
+  overlay_color: "#0B1220"
+  overlay_filter: "0.45"
+  cta_label: "View Projects"
+  cta_url: "/projects/"
+excerpt: "Computer Science @ Northwestern (’27). I build usable, secure web applications at the intersection of Software Engineering and Human–Computer Interaction."
+
+intro:
+  - excerpt: "I’m a junior at Northwestern University studying Computer Science, with a focus on **Software Engineering + HCI**—I care about building systems that real people can actually use. I’m from **Burundi**, speak **five languages** (English, French, Swahili, Kirundi, Kinyarwanda), and I’m usually down to talk soccer (Liverpool fan) or prototype the next idea."
+
+feature_row:
+  - title: "Human-centered software"
+    excerpt: "I start with users: clear flows, thoughtful UI, and fast iteration—then I ship clean, maintainable implementations."
+  - title: "Full-stack + security mindset"
+    excerpt: "I build web apps end-to-end (frontend, APIs, auth) with practical security habits inspired by the OWASP Top 10."
+  - title: "Builder + teammate"
+    excerpt: "I’m collaborative and energetic—whether that’s user testing, pairing on a tricky bug, or getting a deployment over the finish line."
+
+design_row:
+  - title: "Clarity"
+    excerpt: "Simple information hierarchy, readable typography, and calm pages that help users find what they need quickly."
+  - title: "Feedback"
+    excerpt: "Interfaces should explain what’s happening—especially when AI is involved (transparent suggestions, reversible actions)."
+  - title: "Accessibility"
+    excerpt: "Keyboard-friendly flows, strong contrast, and sensible defaults so more people can use the product comfortably."
+
+projects_row:
+  - title: "Cursor IDE Redesign"
+    excerpt: "React prototype exploring transparent AI collaboration: visual versioning, side-by-side previews, and safer commit/revert workflows."
+    url: "/projects/"
+    btn_label: "Explore Projects"
+    btn_class: "btn--primary"
+  - title: "AI Travel Planner (PWA)"
+    excerpt: "Multi-API itinerary generation (OpenAI + maps + reviews), budget optimization, and a security-focused validation pipeline."
+    url: "/projects/"
+    btn_label: "See Details"
+    btn_class: "btn--primary"
+  - title: "nuPython Interpreter Suite"
+    excerpt: "Python-like interpreter in C with a feature-complete debugger, RAM module, and memory-safety validation with tests + valgrind."
+    url: "/projects/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+
+contact_row:
+  - title: "Currently"
+    excerpt: "I’m building **CouponMaxxing**, a team app that helps college students track coupon deadlines so they can use deals before they expire."
+  - title: "Let’s connect"
+    excerpt: "If you’re hiring for software engineering (especially HCI-leaning roles), I’d love to chat."
+    url: "mailto:jeromebizimana2027@u.northwestern.edu"
+    btn_label: "Email Me"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+{% include feature_row id="design_row" %}
+
+{% include feature_row id="projects_row" %}
+
+{% include feature_row id="contact_row" type="center" %}

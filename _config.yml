@@ -14,13 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jerome Bizimana
-email:
+email: jeromebizimana2027@u.northwestern.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Jerome Bizimana's personal website
+  Portfolio of Jerome Bizimana — Computer Science @ Northwestern (Software Engineering + HCI).
 # twitter_username: username
 # github_username: username
 minimal_mistakes_skin: default
 search: true
+
+# If this repo is published via GitHub Pages at https://<username>.github.io
+url: "https://bizimana61.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
@@ -58,20 +62,17 @@ plugins:
 author:
   name   : "Jerome Bizimana"
   avatar : "/assets/images/jerome_photo.jpeg"
-  bio    : "Third year Computer Science major at Northwestern University, focusing on Software Engineering and Human Computer Interaction."
+  bio    : "Computer Science @ Northwestern (’27) — Software Engineering + HCI. I build usable, secure web apps."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:jeromebizimana2027@u.northwestern.edu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jerome-bizimana"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Bizimana61"
 
 footer:
   # links:

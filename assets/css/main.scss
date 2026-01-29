@@ -1,0 +1,123 @@
+---
+---
+
+@charset "utf-8";
+
+// Import Minimal Mistakes (remote_theme)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/*
+  Jerome Bizimana portfolio typography & accessibility tweaks
+  Goals (HCI): readability, clear hierarchy, accessible contrast/focus, reduced cognitive load.
+*/
+
+:root {
+  --jb-text: #0b1220;
+  --jb-muted: #334155;
+  --jb-link: #1d4ed8;
+  --jb-link-hover: #1e40af;
+  --jb-focus: #f59e0b;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  color: var(--jb-text);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* Keep line length readable (HCI: reduces fatigue). */
+.page__content {
+  max-width: 72ch;
+}
+
+.page__content p,
+.page__content li {
+  font-size: 1rem;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3 {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.page__content h1 {
+  font-size: 2.1rem;
+}
+
+.page__content h2 {
+  font-size: 1.5rem;
+  margin-top: 1.6em;
+}
+
+.page__content h3 {
+  font-size: 1.15rem;
+  margin-top: 1.2em;
+}
+
+/* Responsive type scale without clamp() (Sass 3.7 compatible). */
+@media (min-width: 700px) {
+  .page__content h1 {
+    font-size: 2.4rem;
+  }
+  .page__content h2 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page__content h1 {
+    font-size: 2.6rem;
+  }
+  .page__content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Links: visible, consistent, and accessible. */
+a {
+  color: var(--jb-link);
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.14em;
+}
+
+a:hover {
+  color: var(--jb-link-hover);
+}
+
+/* Keyboard focus (HCI: accessibility + clear feedback). */
+:focus-visible {
+  outline: 3px solid var(--jb-focus);
+  outline-offset: 3px;
+}
+
+/* Buttons and CTA affordance */
+.btn {
+  border-radius: 10px;
+  font-weight: 650;
+}
+
+/* Improve feature-row readability */
+.feature__item {
+  p {
+    color: var(--jb-muted);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
